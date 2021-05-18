@@ -60,3 +60,7 @@ This Yelp-clone is basically a hotel review system.for front-end side used React
 <h2>For More Information Kindly visit </h2><a href="https://node-postgres.com/">Node with Postgres</a>
 
 <h2>For More Information About Postgres Query </h2> <a href="https://www.postgresqltutorial.com/postgresql-cheat-sheet/">Postgres Cheat Sheet</a>
+
+<h3>yelp_clone Video</h3>
+
+https://user-images.githubusercontent.com/66472172/118698642-4cb70000-b82e-11eb-9c43-e5b91eef5c71.mp4
