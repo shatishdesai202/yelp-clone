@@ -2,7 +2,7 @@
 
 This Yelp-clone is basically a hotel review system.for front-end side used React and backend-side Used Express Server,And for database used Postgresql.
 
-<h3> this Demo Project mainly focused on how to config PostgreSQL with node and much Intermediate stuff are added </h3>
+<h3> this Demo Project mainly focused on how to config PostgreSQL with node and Intermediate stuff are added </h3>
 
 <b>Used Package For Front-end Side</b>
 
