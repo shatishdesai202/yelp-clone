@@ -1,20 +1,15 @@
 import React from "react";
 
 const StarRating = ({ rating, totalcount }) => {
-
-  console.log('rating',rating)
-  console.log('total count',totalcount)
-
-
   const star = [];
 
   for (let i = 1; i <= 5; i++) {
     if (i <= rating) {
-      star.push(<i class="fas fa-star"></i>);
+      star.push(<i key={i} className="fas fa-star"></i>);
     } else if (i === Math.ceil(rating) && !Number.isInteger(rating)) {
-      star.push(<i class="fas fa-star-half-alt"></i>);
+      star.push(<i key={i} className="fas fa-star-half-alt"></i>);
     } else {
-      star.push(<i class="far fa-star"></i>);
+      star.push(<i key={i} className="far fa-star"></i>);
     }
   }
 

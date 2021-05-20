@@ -8,7 +8,7 @@ import { RestaurantContext } from "../context/RestaurantContext";
 const ReviewForm = () => {
   const { id } = useParams();
 
-  const { selectedRestaurant, fetchRestaurant } = useContext(RestaurantContext);
+  const { fetchRestaurant } = useContext(RestaurantContext);
 
   const initialValues = { name: "", review: "", rating: 1 };
 
@@ -29,7 +29,6 @@ const ReviewForm = () => {
     }
   };
 
-  console.log("review Form", selectedRestaurant);
   return (
     <div className="m-5">
       <Formik

@@ -26,19 +26,23 @@ const DisplayReview = () => {
       {selectedRestaurant &&
         selectedRestaurant.reviews &&
         selectedRestaurant.reviews.map((reviews) => (
-          <div class="card text-white bg-success  m-2" style={{ width: "30%" }}>
+          <div
+            key={reviews.id}
+            className="card text-white bg-success  m-2"
+            style={{ width: "30%" }}
+          >
             <span
               className="btn btn-sm btn-danger"
               onClick={(e) => handleDeleteReview(e, reviews.id)}
             >
               delete
             </span>
-            <div class="card-header d-flex justify-content-between">
-              <h5 class="card-title">{reviews.name}</h5>
+            <div className="card-header d-flex justify-content-between">
+              <h5 className="card-title">{reviews.name}</h5>
               <StarRating rating={reviews.rating} />
             </div>
-            <div class="card-body">
-              <p class="card-text">{reviews.review}</p>
+            <div className="card-body">
+              <p className="card-text">{reviews.review}</p>
             </div>
           </div>
         ))}

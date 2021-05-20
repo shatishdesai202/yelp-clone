@@ -5,8 +5,6 @@ import StarRating from "./StarRating";
 const Header = ({ headerTitle }) => {
   const { selectedRestaurant } = useContext(RestaurantContext);
 
-  console.log("header", selectedRestaurant);
-
   return (
     <>
       <div className="display-1 text-center">

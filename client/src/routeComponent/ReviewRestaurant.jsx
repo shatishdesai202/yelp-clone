@@ -6,7 +6,6 @@ import DisplayReview from "../components/DisplayReview";
 
 import Header from "../components/Header";
 import ReviewForm from "../components/ReviewForm";
-import StarRating from "../components/StarRating";
 import { RestaurantContext } from "../context/RestaurantContext";
 
 const ReviewRestaurant = () => {
@@ -17,14 +16,11 @@ const ReviewRestaurant = () => {
 
   useEffect(() => {
     const fetchRestaurant = async () => {
-      const data = await RestaurantFinder.get(`/${id}`);  
+      const data = await RestaurantFinder.get(`/${id}`);
       setSelectedRestaurant(data.data, data.reviews);
     };
     fetchRestaurant();
   }, []);
-
-
-  console.log('review Restaurant @@@@@@@@@@@@@',selectedRestaurant)
 
   return (
     <div>
@@ -37,7 +33,7 @@ const ReviewRestaurant = () => {
         }
       />
 
-      <DisplayReview  />
+      <DisplayReview />
       <ReviewForm />
     </div>
   );
